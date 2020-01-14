@@ -21,7 +21,7 @@ class Forms extends Component{
     }
    onSubmit = e => {
        e.preventDefault()
-         axios.post('/api/listing', {
+         axios.get('/auth/google', {
             title: this.state.title,
             description: this.state.description
         })

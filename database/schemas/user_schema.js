@@ -2,14 +2,17 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const UserSchema = new Schema({
-
+    googleID: {
+        type: String,
+        required: true // only google auth requires required field
+    },
     email: {
         type: String,
         required: true
     },
     password: {
         type: String,
-        required: true,
+        // required: true,
         bcrypt: true
     },
     firstName: {
@@ -27,3 +30,4 @@ const UserSchema = new Schema({
 
 UserSchema.plugin(require('mongoose-bcrypt'));
 module.exports = UserSchema;
+// mongoose.model("users", UserSchema);
