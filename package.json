@@ -12,7 +12,7 @@
   "author": "Hayden Fuller, Jo Dunham, Ewe Lin Loo",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "bcrypt": "^3.0.7",
     "body-parser": "^1.19.0",
     "concurrency": "^0.1.4",
